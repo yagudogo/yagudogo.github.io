@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<link rel="icon" href="/resources/rain-layout/images/favicon.ico" type="image/x-icon" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/theme.css.xhtml?ln=primefaces-rain-blue-light&amp;v=10.0.0&amp;e=10.0.1" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/primeicons/primeicons.css.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1" /><script type="text/javascript" src="/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1"></script><script type="text/javascript" src="/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1"></script><script type="text/javascript" src="/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1"></script><script type="text/javascript" src="/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.1"></script><script type="text/javascript" src="/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&amp;stage=Development"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/primeicons.css.xhtml?ln=rain-layout" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/layout-cyan-light.css.xhtml?ln=rain-layout" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/custom.css.xhtml" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';PrimeFaces.settings.viewId='/download-video.xhtml';PrimeFaces.settings.contextPath='';PrimeFaces.settings.cookiesSecure=false;PrimeFaces.settings.projectStage='Development';}</script>
+		<title>DESIMO - Video</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+		</script>
+
+		<style type="text/css">
+			body,
+			p,
+			div {
+			font-family: arial, helvetica,
+			sans-serif;
+			font-size: 14px;
+			}
+
+			body {
+			color: #000000;
+			}
+
+			body a {
+			color:
+			#000000;
+			text-decoration: none;
+			}
+
+			p {
+			margin: 0;
+			padding: 0;
+			}
+
+			table.wrapper {
+			width: 100% !important;
+			table-layout: fixed;
+			-webkit-font-smoothing:
+			antialiased;
+			-webkit-text-size-adjust: 100%;
+			-moz-text-size-adjust:
+			100%;
+			-ms-text-size-adjust: 100%;
+			}
+
+			img.max-width
+			{
+			max-width: 100% !important;
+			}
+
+			.column.of-2 {
+			width: 50%;
+			}
+
+			.column.of-3 {
+			width: 33.333%;
+			}
+
+			.column.of-4 {
+			width: 25%;
+			}
+
+			@media screen and
+			(max-width:480px) {
+
+			.preheader .rightColumnContent,
+			.footer
+			.rightColumnContent {
+			text-align: left !important;
+			}
+
+			.preheader
+			.rightColumnContent div,
+			.preheader
+			.rightColumnContent span,
+			.footer
+			.rightColumnContent div,
+			.footer
+			.rightColumnContent span {
+			text-align:
+			left !important;
+			}
+
+			.preheader .rightColumnContent,
+			.preheader
+			.leftColumnContent {
+			font-size: 80% !important;
+			padding: 5px 0;
+			}
+
+			table.wrapper-mobile {
+			width: 100% !important;
+			table-layout: fixed;
+			}
+
+			img.max-width {
+			height: auto !important;
+			max-width: 100% !important;
+			}
+
+			a.bulletproof-button {
+			display: block !important;
+			width: auto
+			!important;
+			font-size: 80%;
+			padding-left: 0 !important;
+			padding-right: 0
+			!important;
+			}
+
+			.columns {
+			width: 100% !important;
+			}
+
+			.column {
+			display: block
+			!important;
+			width: 100% !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			margin-left: 0 !important;
+			margin-right: 0
+			!important;
+			}
+			}
+		</style></head><body>
+		<center class="wrapper" data-link-color="#000000" data-body-style="font-size:14px; font-family:arial,helvetica,sans-serif; color:#000000; background-color:#e8fcff;">
+			<div class="webkit">
+<form id="videoform" name="videoform" method="post" action="/download-video.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="videoform" value="videoform" />
+
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#e8fcff">
+						<tbody>
+							<tr>
+								<td valign="top" bgcolor="#e8fcff" width="100%">
+									<table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+										<tbody>
+											<tr>
+												<td width="100%">
+													<table width="100%" cellpadding="0" cellspacing="0" border="0">
+														<tbody>
+															<tr>
+																<td>
+
+																	<table width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;" align="center">
+																		<tbody>
+																			<tr>
+																				<td role="modules-container" style="padding:0px 0px 0px 0px; color:#000000; text-align:left;" bgcolor="#ffffff" width="100%" align="left">
+																					<table class="module preheader preheader-hide" role="module" data-type="preheader" border="0" cellpadding="0" cellspacing="0" width="100%" style="display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
+																						<tbody>
+																							<tr>
+																								<td role="module-content">
+																									<p></p>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+
+																					<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:20px 0px 20px 0px;" bgcolor="#23A6d5">
+																						<tbody>
+																							<tr role="module-content">
+																								<td height="100%" valign="top">
+																									<table class="column" width="600" style="width:600px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="">
+																										<tbody>
+																											<tr>
+																												<td style="padding:0px;margin:0px;border-spacing:0;">
+																													<table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="9f29c991-6500-41ef-9f0e-d56cb5dc1238">
+																														<tbody>
+																															<tr>
+																																<td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
+																																	<img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;" alt="" data-proportionally-constrained="true" data-responsive="false" src="https://desimod-app.s3.eu-west-1.amazonaws.com/mail_resources/desimo.png" />
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					<table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="7bf3c8d1-3ee5-43af-91f2-1ef67b1f878c">
+																						<tbody>
+																							<tr>
+																								<td style="font-size:6px; line-height:10px; padding:5%;" valign="top" align="center">
+
+																									<div style="font-family: inherit; text-align: center"><img id="videoform:logo" src=" https://desimod-app.s3.eu-west-1.amazonaws.com/d8e6c8cc-852b-4006-806a-b1df8342bbca?pfdrid_c=true" alt="" width="10%" height="10%" style="vertical-align: middle; border-radius: 50%;" />
+																										<span style="color: #23a6d5; font-size: 28px; font-family: lucida sans unicode,lucida grande,sans-serif">
+																											<strong>Clinica Yannick</strong>
+																										</span>
+																									</div>
+
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					<table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="7bf3c8d1-3ee5-43af-91f2-1ef67b1f878c">
+																						<tbody>
+
+																							<tr>
+																								<td style="font-size:6px; line-height:10px;" valign="top" align="center"><div id="videoform:j_idt9" class="ui-outputpanel ui-widget" style="text-align:center;"><div id="videoform:j_idt10" class="ui-media ui-video"><video id="videoform:j_idt10_video" controls="true" height="100%" width="100%"><source src="https://desimod-app.s3.eu-west-1.amazonaws.com/video/1629400698.5478437?pfdrid_c=true" type="video/mp4"></source></video></div></div>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					<table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="b35b8ff4-8b3c-4b35-9ed3-f9f25170affc">
+																						<tbody>
+																							<tr>
+																								<td style="padding:40px 20px 18px 20px; line-height:28px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content">
+																									<div>
+																										<div style="font-family: inherit; text-align: center"><label id="videoform:j_idt13" class="ui-outputlabel ui-widget">Puede descargar el vídeo pulsando en el botón de Descargar. Muchas gracias.</label>
+																										</div>
+
+																									</div>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																					<table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="3757586a-ce69-48ba-bd9a-0c0b7937a616">
+																						<tbody>
+																							<tr>
+																								<td align="center" bgcolor="" class="outer-td" style="padding:0px 0px 40px 0px;">
+																									<table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+																										<tbody>
+																											<tr>
+																												<td align="center" bgcolor="#E73C7E" class="inner-td" style="border-radius:6px; font-size:16px; text-align:center; background-color:inherit;"><input id="videoform:j_idt15" type="submit" name="videoform:j_idt15" value="Descargar" style="padding: 5px !important;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only info-button p-mr-2 p-mb-2" onclick="mojarra.ab(this,event,'action',0,0,{'onevent':download('https://desimod-app.s3.eu-west-1.amazonaws.com/video/1629400698.5478437')});return false" />
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-2399886372891787033:-5880146624854337798" autocomplete="off" />
+</form>
+			</div>
+		</center></body>
+
+	<script>
+		function download(videoLink){
+		axios({
+		url:videoLink,
+		method:'GET',
+		responseType: 'blob'
+		})
+		.then((response) => {
+		const url =
+		window.URL
+		.createObjectURL(new Blob([response.data]));
+		const link =
+		document.createElement('a');
+		link.href = url;
+		link.setAttribute('download', 'video.mpg');
+		document.body.appendChild(link);
+		link.click();
+		})
+		}
+
+	</script>
+
+</html>
